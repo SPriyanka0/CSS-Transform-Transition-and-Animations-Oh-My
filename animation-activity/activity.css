@@ -26,18 +26,18 @@ nav {
 .hamburger:hover ~ nav {
   opacity: 1;
 }
-
+/**edited code from here*/
 @keyframes top {
-  from {}
-  to {}
+  from {transform: rotate(0)}
+  to {transform: translateY( 30px) rotate(45deg) ; }/**should be an x*/
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {opacity: 1}
+  to {opacity: 0}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform: rotate(0)}
+  to {transform: translateY( -30px) rotate(-45deg) ; }/**align with @keyframes top*/
 }
